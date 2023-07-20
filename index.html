@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="">
+                <img id="logo" src="Assets/K.png" >
+            </a>
+            <a href="" id="login">Login</a>
+        </div>
+        <hr />
+        <div id="title">
+            <h1>Kalkulator BMI</h1>
+        </div>
+    </header>
+    <main>
+        <div id="formInput">
+            <div id="firstParagraph">
+                <p>
+                    Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk yang menunjang
+                    penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+                    <br>
+                    Yuk, hitung sekarang di kalkulator BMI!
+                </p>
+            </div>
+
+            <div class="BMI">
+            <div class="container">
+                <form name="form-bmi" id="form-bmi" onsubmit="return hitung()">
+                    <label>Jenis Kelamin</label><br />
+                    <input type="radio" id="pria" name="sender-gender" value="pria">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="sender-gender" value="wanita">
+                    <label for="wanita">Wanita</label><br /><br />
+                    <label>Berat Badan (kg)</label><br />
+                    <div class="inputNumber">
+                        <i class="material-icons">mode_edit</i>
+                        <input type="number" id="sender-weight" name="sender-weight">
+                    </div><br />
+                    <label>Usia (tahun)</label>
+                    <div class="inputNumber">
+                        <i class="material-icons">mode_edit</i>
+                        <input type="number" id="sender-age" name="sender-age" placeholder="Minimal usia 18 tahun">
+                    </div><br />
+                    <label>Tinggi Badan (cm)</label>
+                    <div class="inputNumber">
+                        <i class="material-icons">mode_edit</i>
+                        <input type="number" id="sender-height" name="sender-height">
+                    </div><br />
+                    <button type="submit" id="submit">Hitung BMI</button>
+                    <button type="reset" id="reset" >Reset</button>
+                </form>               
+            </div>
+            
+            <div class="container" id="result">
+                <div id="resultTitle">
+                    <h2>Hasil</h2>
+                </div>
+                <div id="status-bmi-pertama">
+                    <p>Berat Badan Kurang</p>
+                    <p id="hasil-bmi-satu"></p>
+                    <p>Anda kekurangan berat badan!</p>
+                </div>
+                <div id="status-bmi-kedua">
+                    <p>Berat Badan Normal</p>
+                    <p id="hasil-bmi-dua"></p>
+                    <p>Anda memiliki berat badan ideal!</p>
+                </div>
+                <div id="status-bmi-ketiga">
+                    <p>Berat Badan Lebih</p>
+                    <p id="hasil-bmi-tiga"></p>
+                    <p>Anda memiliki berat badan berlebih!</p>
+                </div>
+                <div id="status-bmi-keempat">
+                    <p>Obesitas</p>
+                    <p id="hasil-bmi-empat"></p>
+                    <p>Anda berada dalam kategori obesitas!</p>
+                </div>
+            </div>
+            </div>
+
+            <section id="featureExplanation">
+                <div id="featureAdvantages">
+                    <h2>Keunggulan Fitur :</h2>
+                </div>
+                <ol class="advantages">
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <p>
+                    Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                    mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                    selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                </p>
+                <p>
+                    Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+                    Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+                    kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.
+                </p>
+            </section>
+
+            <div class="containerbmi" id="container-bmi">
+                <div class="explanation">
+                    <div id="penjelasan-bmi-satu">
+                        <p>Hasil BMI kurang dari 18.5</p>
+                        <p>
+                            Anda berada dalam kategori kekurangan berat badan. <br />
+                            Hubungi dokter lebih lanjut mengenai pola makan dan gizi yang baik untuk meningkatkan kesehatan.
+                        </p>
+                        <div class="potential-illness">
+                            <p>Berat rendah dapat menyebabkan berbagai masalah penyakit</p>
+                            <ul class="unorder-list">
+                                <li>Infertilitas</li>
+                                <li>Anemia</li>
+                                <li>Osteoporosis</li>
+                                <li>Sistem Imun Lemah</li>
+                            </ul>  
+                        </div>
+                        <p>
+                            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. 
+                            Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                        </p>
+                    </div>
+                    <div id="penjelasan-bmi-dua">
+                        <p>Hasil BMI di antara 18.5 dan 24.9</p>
+                        <p>
+                            Anda berada dalam kategori berat badan yang normal. <br />
+                            Tetap pertahankan berat badan Anda dan jaga berat badan Anda dengan mengatur keseimbangan antara pola makan dan aktivitas fisik Anda.
+                        </p>
+                        <p>
+                            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. 
+                            Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                        </p>
+                    </div>
+                    <div id="penjelasan-bmi-tiga">
+                        <p>Hasil BMI di antara 25 dan 29.9</p>
+                        <p>
+                            Anda berada dalam kategori overweight atau berat badan berlebih.<br />
+                            Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga. <br />
+                            Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.
+                        </p>
+                        <div class="potential-illness">
+                            <p>Beberapa penyakit yang berasal dari kegemukan</p>
+                            <ul class="unorder-list">
+                                <li>Diabetes</li>
+                                <li>Hipertensi</li>
+                                <li>Sakit Jantung</li>
+                                <li>Osteoarthritis</li>
+                            </ul>  
+                        </div>
+                        <p>
+                            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. 
+                            Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                        </p>
+                    </div>
+                    <div id="penjelasan-bmi-empat">
+                        <p>Hasil BMI lebih dari 29.9</p>
+                        <p>
+                            Anda berada dalam kategori obesitas.<br />
+                            Usahakan untuk menurunkan berat badan dan menerapkan pola hidup sehat dengan menjaga makan dan aktivitas fisik. <br />
+                            Segera kunjungi dokter untuk dilakukan pemeriksaan kesehatan lanjutan untuk mengetahui risiko yang Anda miliki terkait berat badan Anda.
+                        </p>
+                        <div class="potential-illness">
+                            <p>Beberapa penyakit yang berasal dari kegemukan</p>
+                            <ul class="unorder-list">
+                                <li>Diabetes</li>
+                                <li>Hipertensi</li>
+                                <li>Sakit Jantung</li>
+                                <li>Osteoarthritis</li>
+                            </ul>  
+                        </div>
+                        <p>
+                            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. 
+                            Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                        </p>
+                    </div>
+                </div>
+                <div class="explanation" id="download-app">
+                    <p>Download Aplikasi</p>
+                    <a href="">
+                        <img id="google-play" src="Assets/google-play.png">
+                    </a><br /><br />
+                    <a href="">
+                        <img id="app-store" src="Assets/app-store.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </main>
+    <footer style="padding-top: 50px;">
+        <hr>
+        <table class="footer">
+            <tr>
+                <td colspan="2">Kalkulator</td>
+            </tr>
+            <tr>
+                <td>Term of Service</td>
+                <td>Privacy Policy</td>
+            </tr>
+            <tr>
+                <td colspan="2">@2023  Kalkulator</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

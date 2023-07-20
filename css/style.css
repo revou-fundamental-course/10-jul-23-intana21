@@ -1,0 +1,309 @@
+body {
+    font-family:  "Times New Roman", Georgia, serif;
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#login {
+    width: 60px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #7bd1d1;
+    border: 1px solid #7bd1d1;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#login:hover {
+    background-color: #38c4c4;
+    color: #F8F6F4;
+}
+
+#title {
+    margin-left: 150px;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/*main - Form Input*/
+#formInput {
+    margin-right: 120px;
+    margin-left: 120px;
+    background-color: #E3F4F4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+#firstParagraph {
+    text-align: justify;
+    line-height: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.BMI {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    border: 1px solid #F8F6F4;
+    background-color: #F8F6F4;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 #82d8d8, 0 4px 10px 0 #7bd1d1;
+}
+
+.inputNumber input {
+    outline: none;
+    border: 0px solid #fff;
+    padding: 5px 5px 6px 5px;
+    margin-left: 30px;
+    position: relative;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 0px 0px rgba(186,213,232,1);
+    width: 80%;
+    height: 34px;
+}
+
+.inputNumber i {
+    background-color: #F8F6F4;
+    border: 1px solid #ccc;
+    color: rgb(200, 200, 200);
+    border-radius: 5px 0 0 5px;
+    padding: 2px 3px 2px 3px;   
+    position: absolute;
+    height: 29px;
+}
+
+#submit {
+    background-color: #7bd1d1;
+    color: #fff;
+    border: 1px solid #7bd1d1;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+}
+
+#submit:hover {
+    background-color: #38c4c4;
+}
+
+#reset {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 60px;
+    height: 30px;
+}
+
+#reset:hover {
+    background-color: #F8F6F4;
+}
+
+/*Display BMI Result*/
+#resultTitle h2 {
+    margin-top: 0;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+#result {
+    display: none;
+}
+
+#status-bmi-pertama {
+    display: none;
+}
+
+#status-bmi-kedua {
+    display: none;
+}
+
+#status-bmi-ketiga {
+    display: none;
+}
+
+#status-bmi-keempat {
+    display: none;
+}
+
+.container #status-bmi-pertama {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container #hasil-bmi-satu {
+    font-size: 40px;
+}
+
+.container #status-bmi-kedua {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container #hasil-bmi-dua {
+    font-size: 40px;
+}
+
+.container #status-bmi-ketiga {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container #hasil-bmi-tiga {
+    font-size: 40px;
+}
+
+.container #status-bmi-keempat {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container #hasil-bmi-empat {
+    font-size: 40px;
+}
+
+/*BMI Form Explanation*/
+#featureExplanation {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: block;
+}
+
+#featureExplanation p {
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 30px;
+}
+
+#featureAdvantages {
+    margin-bottom: 5px;
+}
+
+.advantages {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/*Result Explanation*/
+.containerbmi {
+    display: flex;
+    flex-direction: row;
+}
+
+.explanation {
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: justify;
+}
+#penjelasan-bmi-satu {
+    display: none;
+    line-height: 20px;
+}
+
+#penjelasan-bmi-dua {
+    display: none;
+    line-height: 20px;
+}
+
+#penjelasan-bmi-tiga {
+    display: none;
+    line-height: 20px;
+}
+
+#penjelasan-bmi-empat {
+    display: none;
+    line-height: 20px;
+}
+
+.potential-illness {
+    background-color: #fff;
+    width: 100%;
+    text-align:  center;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+
+}
+
+.unorder-list {
+    list-style-type: none;
+    padding: 0; 
+}
+
+#download-app {
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 70px 0 70px 0;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #formInput {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #judul {
+        margin-left: 5px;
+    }
+    .BMI {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 80%;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+    .inputNumber input {
+        width: 80%;
+    }
+    .containerbmi {
+        display: flex;
+        flex-direction: column;
+    }
+    .explanation {
+        width: 80%;
+    }
+    #download-app {
+        padding: 20px 0 40px 0;
+    }
+}
+
